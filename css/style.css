@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* importa a fonte roboto do google */
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -11,13 +12,9 @@ h1{
     text-align: center;
     color: #ededed;
     font-size: 50px;
+    font-weight: bold;
 }
 
-.foot{  /*rodapé*/
-    text-align: center;
-    color: #ededed;
-    font-size: 12px;
-} 
 
 .container{   /*tela maior*/
     display: flex;
@@ -33,30 +30,29 @@ h1{
 .screen{ /*tela cronometro*/
     text-align: center;
     font-size: 100px;
-    width: 87vw;
+    width: 400px;
     line-height: 1px; /*entrelinhas*/
     background-color: #004578;
     color: antiquewhite;
     border-radius: 5px;
     border: 2px solid rgb(21, 32, 37);
+    padding: 5px;
 }
 
 .box_button{ /*box dos botões*/
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 5px;
-    width: 87vw;
+    flex-wrap: wrap; /* define se os botões vao ficar na mesma linha*/
+    padding: 5px; /*distancia entre os objetos*/
+    width: 87vw; /* largura - vw é 1 vezes 7.5px*/
 }
 
 .item{
     height: max-content;
     justify-content: center;
-    padding: 5px; /*distancia entre os objetos*/
+    padding: 5px; 
     line-height: 20px;
 }
-
-
 
 button{ /* botões*/
     width: 220px;
@@ -65,7 +61,7 @@ button{ /* botões*/
     font-size: 20px;
     color: #fff;
     border: 2px solid rgb(15, 19, 15);
-    border-radius: 5px;
+    border-radius: 5px; /* borda redonda*/
     transition: all 0.3s;
 }
 
@@ -75,15 +71,28 @@ button{ /* botões*/
     transition: all 0.3s;
 }
 
+.foot{  /*rodape*/
+    text-align: center;
+    color: #ededed;
+    font-size: 14px;
+} 
+
 /*responsividade*/
 @media (max-width: 768px){ /*@media - tamanho das telas 768px tablet*/
     .container{
         display: flex;
         background-color: #0078db;
+        align-items: center;
+    }
+
+    .screen{
+        font-size: 4.8em;/*EM - diminui ou aumenta*/
+        width: 4.8em;
     }
     .item{
         display: flex;
         height: 80px;
+        
     }
     .box_button{
         display: flex;
@@ -93,6 +102,7 @@ button{ /* botões*/
 @media (max-width: 375px){ /*@media - tamanho das telas 375px celular*/
     .container{
         background-color: #106ebe;
+        align-items: center;
     }
     .box_button{
       width: 150px;
@@ -100,8 +110,8 @@ button{ /* botões*/
     }
 
     .screen{
-        font-size: 80px;
-        width: 47vw;
+        font-size: 0.5em;/*diminui pela metade*/
+        width: 0.5em;/*diminui pela metade*/
     }
     
     .item{
