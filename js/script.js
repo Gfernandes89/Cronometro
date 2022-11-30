@@ -21,7 +21,7 @@ function pause_number(){
 }
 
 function reset_number(){ 
-    clearInterval(interval) 
+    clearInterval(interval)
     sec=0
     min=0
     document.getElementById('watch').innerText='00:00:00' 
@@ -32,7 +32,7 @@ function watch(){
     if(sec==60){ 
         min++
         sec=0
-        if(min==60){
+        if(min==60){ 
             min=0
             hr++
         }
