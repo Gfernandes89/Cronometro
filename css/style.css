@@ -78,7 +78,7 @@ button{ /* botões*/
 } 
 
 /*responsividade*/
-@media (max-width: 768px){ /*@media - tamanho das telas 768px tablet*/
+@media (max-width: 768px){ /*@media - tamanho das telas 768px tablet e a52*/
     .container{
         display: flex;
         background-color: #0078db;
@@ -86,8 +86,8 @@ button{ /* botões*/
     }
 
     .screen{
-        font-size: 100px;
-        width: 200px;
+        font-size: 70px;
+        width: 230px;
     }
     .item{
         display: flex;
@@ -99,7 +99,7 @@ button{ /* botões*/
       }
 }
 
-@media (max-width: 375px){ /*@media - tamanho das telas 375px celular*/
+@media (max-width: 375px){ /*@media - tamanho das telas 375px celular antigos*/
     .container{
         background-color: #106ebe;
         align-items: center;
