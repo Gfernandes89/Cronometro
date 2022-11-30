@@ -1,0 +1,18 @@
+{
+    "short_name": "Cronometro",
+    "name": "Cronometro",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ff6347",
+    "theme-color": "#ff6347",
+    "background_color": "#ff6347",
+    "background-color": "#ff6347",
+    "description": "Cronometro Gabriel e Carlos Gabriel",
+    "icons": [
+        {
+            "src": "img/icon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
