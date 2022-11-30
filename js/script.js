@@ -1,6 +1,7 @@
 var sec=0
 var min=0
 var hr=0
+
 var interval
 
 function digitos(digit){
@@ -13,29 +14,33 @@ function digitos(digit){
 
 function play_number(){
     watch()
-    interval= setInterval(watch,10) 
+    interval= setInterval(watch,10)
+
+
 }
 
-function pause_number(){ 
+function pause_number(){
     clearInterval(interval)
+
 }
 
-function reset_number(){ 
+function reset_number(){
     clearInterval(interval)
     sec=0
     min=0
-    document.getElementById('watch').innerText='00:00:00' 
+    document.getElementById('watch').innerText='00:00:00'
+
 }
 
-function watch(){ 
-    sec++ 
-    if(sec==60){ 
+function watch(){
+    sec++
+    if(sec==60){
         min++
         sec=0
-        if(min==60){ 
+        if(min==60){
             min=0
             hr++
         }
     }
-    document.getElementById('watch').innerText=digitos(hr)+':'+digitos(min)+':'+digitos(sec) 
+    document.getElementById('watch').innerText=digitos(hr)+':'+digitos(min)+':'+digitos(sec)
 }
