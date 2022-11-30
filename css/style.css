@@ -110,8 +110,8 @@ button{ /* botões*/
     }
 
     .screen{
-        font-size: 50%;/*diminui pela metade*/
-        width: 50%;/*diminui pela metade*/
+        font-size: 100%;/*diminui pela metade*/
+        width: 100%;/*diminui pela metade*/
     }
     
     .item{
