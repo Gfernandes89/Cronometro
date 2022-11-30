@@ -40,3 +40,18 @@ function watch(){ /*monta o cronometro com hora, mes e segundos*/
     }
     document.getElementById('watch').innerText=digitos(hr)+':'+digitos(min)+':'+digitos(sec) /*Imprime o tempo*/
 }
+
+/* JASON */
+indow.addEventListener('load', () => {
+    registerSW()
+})
+
+async function registerSW(){
+    if('serviceWorker' in navigator){
+        try{
+            await navigator.serviceWorker.register('./sw.js')
+        }catch(e){
+            console.log('Falha no registro SW')
+        }
+    }
+}
