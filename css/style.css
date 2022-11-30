@@ -86,8 +86,8 @@ button{ /* botões*/
     }
 
     .screen{
-        font-size: 75%;/*EM - diminui ou aumenta*/
-        width: 75%;
+        font-size: 100px;
+        width: 200px;
     }
     .item{
         display: flex;
@@ -110,8 +110,8 @@ button{ /* botões*/
     }
 
     .screen{
-        font-size: 50px;/*diminui pela metade*/
-        width:200px;/*diminui pela metade*/
+        font-size: 80px;
+        width:200px;
     }
     
     .item{
